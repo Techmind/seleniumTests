@@ -14,10 +14,10 @@ class RealtyTest extends PHPUnit_Framework_TestCase
 
     public function setUp()
     {
-        $webdriver = new WebDriver(file_get_contents('selenium.dev.url') ? : file_get_contents('selenium.url'));
+        $webdriver = new WebDriver(is_file('selenium.dev.url') ? file_get_contents('selenium.dev.url') : file_get_contents('selenium.url'));
 
         try {
-        $this->session = $webdriver->session();
+            $this->session = $webdriver->session();
         } catch (Exception $e) {
             var_dump($e);
         }
@@ -26,7 +26,9 @@ class RealtyTest extends PHPUnit_Framework_TestCase
 
     public function tearDown()
     {
-        $this->session->close();
+        if ($this->session) {
+            $this->session->close();
+        }
     }
 
     private function isNot404($url) {
