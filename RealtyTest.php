@@ -2,7 +2,6 @@
 // GoogleTest.php
 // должны быть установлены PEAR-пакеты
 // сам PEAR должен быть в include_path
-require_once 'Testing/Selenium.php';
 require_once 'PHPUnit/Framework/TestCase.php';
 require 'php-webdriver/__init__.php';
 
