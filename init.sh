@@ -14,4 +14,4 @@ mkdir -p .mozilla/firefox/
 
 ls -la selenium-server-standalone-2.29.0.jar || wget http://selenium.googlecode.com/files/selenium-server-standalone-2.29.0.jar
 
-nohup java -jar selenium-se!rver-standalone-2.29.0.jar -Dwebdriver.firefox.profile="TESTING" 2>&1 > /dev/null &
+nohup java -jar selenium-server-standalone-2.29.0.jar -Dwebdriver.firefox.profile="TESTING" 2>&1 > /dev/null &
