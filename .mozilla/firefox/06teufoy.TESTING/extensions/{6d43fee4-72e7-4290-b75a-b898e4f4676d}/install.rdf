@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?><RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>{6d43fee4-72e7-4290-b75a-b898e4f4676d}</em:id>
+    <em:version>1.1</em:version>
+    <em:type>2</em:type>
+    <em:bootstrap>true</em:bootstrap>
+    <em:unpack>true</em:unpack>
+
+    <!-- Firefox -->
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>11.0</em:minVersion>
+        <em:maxVersion>13.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+
+    <!-- Front End MetaData -->
+    <em:name>BlockSite Plus</em:name>
+    <em:description>Black list website, pictures and iframes by URL.</em:description>
+    <em:creator>KYL</em:creator>
+    <em:iconURL/>
+    <em:icon64URL/>
+	<em:optionsURL>chrome://blocksite/content/BlockSitePrefs.xul</em:optionsURL>
+  </Description>
+</RDF>

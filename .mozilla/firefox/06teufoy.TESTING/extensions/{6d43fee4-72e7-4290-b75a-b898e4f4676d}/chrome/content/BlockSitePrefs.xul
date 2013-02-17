@@ -1,0 +1,74 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet href="chrome://global/skin" type="text/css" ?>
+<!DOCTYPE window SYSTEM "chrome://blocksite/locale/BlockSite.dtd">
+
+<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" 
+	flex="1"
+	title="&BlockSite.preferences;"
+	onload="BlockSitePrefs.readPrefs()"
+	ondialogaccept="BlockSitePrefs.storePrefs()">
+	<script type="application/x-javascript" src="chrome://blocksite/content/md5.js"></script>
+	<script type="application/x-javascript" src="chrome://blocksite/content/authentication.js"></script>
+	<script type="application/x-javascript" src="chrome://blocksite/content/convert2RegExp.js"></script>
+	<script type="application/x-javascript" src="chrome://blocksite/content/BlockSitePrefs.js"></script>
+	<vbox>
+		<groupbox>
+			<caption label="&BlockSite.enableFunctions;" />
+			<vbox>
+				<checkbox id="blockSiteCheckbox" label="&BlockSite.enableBlockSite;" />
+				<checkbox id="blockSiteCheckboxWarning" label="&BlockSite.enableWarning;" />
++ 				<checkbox id="blockSiteCheckboxRemoveLinks" label="&BlockSite.removeLinks;" />
+				<radiogroup id="listtypeRadiogroup" onclick="BlockSitePrefs.changeListType()">
+					<hbox>
+						<radio id="blacklistRadio" label="&BlockSite.blacklist;" />
+						<radio id="whitelistRadio" label="&BlockSite.whitelist;" />
+					</hbox>
+				</radiogroup>
+			</vbox>
+		</groupbox>
+		<groupbox>
+			<caption label="&BlockSite.authentication;" />
+			<vbox>
+				<checkbox id="blockSiteCheckboxAuthentication" label="&BlockSite.enableAuthentication;" />
+				<hbox align="center">
+					<label value="&BlockSite.password;" control="blockSitePassword" />
+					<textbox type="password" id="blockSitePassword" />
+				</hbox>
+			</vbox>
+		</groupbox>
+		<groupbox>
+			<caption id="listtypeCaption" label="&BlockSite.blacklist;" />
+			<checkbox id="blockSiteCheckboxQuickAdd" label="&BlockSite.quickaddCheck;" />
+			<hbox>
+				<vbox flex="1">
+					<textbox id="blockSiteQuickAddLocation" value="http://" width="400" oninput="BlockSitePrefs.checkQuickAddCheckBox()" tabndex="1" focusable="true"/>
+					<separator/>
+					<listbox id="BlockedWebsitesList" width="400" height="300">
+						<listcols>
+							<listcol flex="1" />
+						</listcols>
+						<listhead>
+							<listheader label="&BlockSite.locations;" />
+						</listhead>
+						
+						<!-- Items -->						
+					</listbox>
+				</vbox>
+				<vbox>
+					<button label="&BlockSite.quickadd;" oncommand="BlockSitePrefs.quickAddLocation()" style="-moz-user-focus: normal;"/>
+					<separator/>
+					<button label="&BlockSite.add;" oncommand="window.open('chrome://blocksite/content/BlockSiteSetWebsite.xul', '', 'chrome,centerscreen')"/>
+					<button label="&BlockSite.edit;" oncommand="window.open('chrome://blocksite/content/BlockSiteEditWebsite.xul', '', 'chrome,centerscreen')"/>
+					<button label="&BlockSite.remove;" oncommand="BlockSitePrefs.removeLocation()" />
+					<separator />
+					<button label="&BlockSite.clearList;" oncommand="BlockSitePrefs.removeAllLocations()" />
+					<button label="&BlockSite.import;" oncommand="BlockSitePrefs.importList()" />
+					<button label="&BlockSite.export;" oncommand="BlockSitePrefs.exportList()" />
+					<separator />
+					<button label="Mobile sync" oncommand="BlockSitePrefs.syncPrefsExport()" />
+					<spacer flex="1" />
+				</vbox>
+			</hbox>
+		</groupbox>
+	</vbox>
+</dialog>

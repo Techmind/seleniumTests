@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<searchresults total_results="1">
+                    <addon id="433">
+  <name>Flashblock</name>
+  <type id="1">Extension</type>
+  <guid>{3d7eb24f-2740-49df-8937-200b1cc08f8a}</guid>
+  <slug>flashblock</slug>
+  <version>1.5.15.1</version>
+  <status id="4">Fully Reviewed</status>
+  <authors>
+        <author id="408">
+      <name>Philip Chee</name>
+      <link>https://addons.mozilla.org/en-US/firefox/user/408/?src=api</link>
+    </author>      </authors>
+  <summary>Never be annoyed by a Flash animation again! Blocks Flash so it won&#39;t get in your way, but if you want to see it, just click on...</summary>
+  <description>Flashblock is an extension for the Mozilla, Firefox, and Netscape browsers that takes a pessimistic approach to dealing with Macromedia Flash content on a webpage and blocks ALL Flash content from loading. It then leaves placeholders on the webpage that allow you to click to download and then view the Flash content.
+
+Flashblock currently blocks the following content types:
+* Macromedia Flash
+* Macromedia Shockwave
+* Macromedia Authorware
+
+Our public support forums can be accessed via:
+our mailing list: &lt;a href=&#34;http://outgoing.mozilla.org/v1/e9ba90506f37f3263f0106bdccb7bc2f44f99e40/http%3A//www.mozdev.org/mailman/listinfo/flashblock&#34; rel=&#34;nofollow&#34;&gt;http://www.mozdev.org/mailman/listinfo/flashblock&lt;/a&gt;
+or newsgroup: &lt;a href=&#34;http://outgoing.mozilla.org/v1/7d94737051fc881d57e79f0cbaffa04e05a9c16c/news%3A//news.mozdev.org/public.mozdev.flashblock&#34; rel=&#34;nofollow&#34;&gt;news://news.mozdev.org/public.mozdev.flashblock&lt;/a&gt;
+
+Please report support issues at: &lt;a href=&#34;http://outgoing.mozilla.org/v1/e9ba90506f37f3263f0106bdccb7bc2f44f99e40/http%3A//www.mozdev.org/mailman/listinfo/flashblock&#34; rel=&#34;nofollow&#34;&gt;http://www.mozdev.org/mailman/listinfo/flashblock&lt;/a&gt; This mailing list is public, other people can see your messages including your email address.
+
+To send private email please use our contact webpage at: &lt;a href=&#34;http://outgoing.mozilla.org/v1/448e3cb2aead1ae1c64962b6e721d5c4e67e17d9/http%3A//flashblock.mozdev.org/contact.html&#34; rel=&#34;nofollow&#34;&gt;http://flashblock.mozdev.org/contact.html&lt;/a&gt;
+
+&lt;b&gt;Note:&lt;/b&gt; Flashblock does not work with Javascript disabled or with NoScript installed.
+
+&lt;b&gt;Since Firefox updated to Firefox 13 I have multiple reports that the Flashblock whitelist doesn&#39;t works any more. One commonality is that Adblock Plus is installed. One user confirms that disabling ABP from the Addons Manager allows the Flashblock whitelist to work.
+
+Other people don&#39;t have ABP installed but might have other extensions that modify page content that might also affect Flashblock. One user reports disabling Ghostery also helps. To be clear these extensions are not at fault but probably trigger a Firefox bug that trips Flashblock up..
+
+Youtube videos not blocked: This is because they are now increasingly HTML5 Videos. I plan to add HTML5 blocking in the next version. Meanwhile you can try out a experimental version at:
+&lt;a href=&#34;http://outgoing.mozilla.org/v1/befe50b14fca285d81be7cdc4b63abee0d703360/http%3A//flashblock.mozdev.org/installation1.html%23unstable&#34; rel=&#34;nofollow&#34;&gt;http://flashblock.mozdev.org/installation1.html#unstable&lt;/a&gt;&lt;/b&gt;
+
+&lt;b&gt;&lt;a href=&#34;http://outgoing.mozilla.org/v1/25a7930badc2e2cc52b8efe6829d20b6f2f05bc6/http%3A//soundcloud.com&#34; rel=&#34;nofollow&#34;&gt;soundcloud.com&lt;/a&gt;:&lt;/b&gt; I&#39;ve added a FAQ entry on how to get Soundcloud working with Flashblock. &lt;a href=&#34;http://outgoing.mozilla.org/v1/1f38a0843e8fd1ceef6ea8d5711d585ce249c7d4/http%3A//flashblock.mozdev.org/faq.html%23fbSoundCloud&#34; rel=&#34;nofollow&#34;&gt;http://flashblock.mozdev.org/faq.html#fbSoundCloud&lt;/a&gt;
+
+&lt;b&gt;Whitelists:&lt;/b&gt; Make sure that you leave out the protocol prefix e.g. &#34;https://&#34; so to whitelist youtube, you should just use &#34;&lt;a href=&#34;http://outgoing.mozilla.org/v1/5ed83dd25f4f1908229bc06256a100ad31add958/http%3A//youtube.com&#34; rel=&#34;nofollow&#34;&gt;youtube.com&lt;/a&gt;&#34;.
+
+A User mentioned that whitelisting youtube videos embedded on other sites stopped working because the URL has changed, You should now whitelist &#34;&lt;a href=&#34;http://outgoing.mozilla.org/v1/4fcaa443f2fbb87fb912eea9219343bd9a96a4ee/http%3A//s.ytimg.com/yt&#34; rel=&#34;nofollow&#34;&gt;s.ytimg.com/yt&lt;/a&gt;&#34; instead.
+
+&lt;b&gt;FoxTab:&lt;/b&gt; To allow FoxTab to work without interruption please add &#34;chrome&#34; to the Flashblock whitelist (without the &#39;&#34; quotes).
+
+Google Street View: Flashblock is reported to prevent Google Street View from running when trying to start it from Google Maps. Please add &lt;a href=&#34;http://outgoing.mozilla.org/v1/f78cabc0d2dcd8c48597073c292842dd7330d8d7/http%3A//maps.google.com&#34; rel=&#34;nofollow&#34;&gt;maps.google.com&lt;/a&gt; to the Flashblock whitelist (For regional versions of Google such as &lt;a href=&#34;http://outgoing.mozilla.org/v1/0723f8f1c036db3895fc6482be51d54b089133dd/http%3A//maps.google.ch&#34; rel=&#34;nofollow&#34;&gt;maps.google.ch&lt;/a&gt;, &lt;a href=&#34;http://outgoing.mozilla.org/v1/49acfbb42030268285ffb6aced23bd43ec3d1a00/http%3A//maps.google.fr&#34; rel=&#34;nofollow&#34;&gt;maps.google.fr&lt;/a&gt;, and &lt;a href=&#34;http://outgoing.mozilla.org/v1/84ea7f413500cb8632a123a7a7ddccaa7561e0be/http%3A//maps.google.de&#34; rel=&#34;nofollow&#34;&gt;maps.google.de&lt;/a&gt; use &#34;maps.google&#34; as the whitelist string). The easiest way to do this is to put the Flashblock toolbar button on a toolbar and then clicking on the drop marker on the right edge of the button. Choose &#34;Allow Flash from this site&#34; while &lt;a href=&#34;http://outgoing.mozilla.org/v1/f78cabc0d2dcd8c48597073c292842dd7330d8d7/http%3A//maps.google.com&#34; rel=&#34;nofollow&#34;&gt;maps.google.com&lt;/a&gt; is in your tab/window.
+
+Please read our FAQ at: &lt;a href=&#34;http://outgoing.mozilla.org/v1/fe0746f01ece2ecce680e2b12eb9e540b70cb040/http%3A//flashblock.mozdev.org/faq.html&#34; rel=&#34;nofollow&#34;&gt;http://flashblock.mozdev.org/faq.html&lt;/a&gt;
+Many common questions have answers there.
+
+Flashblock 1.5 is designed to work only with Firefox 2.0 and newer, Netscape Navigator 9 and with Flock.
+
+For other browsers such as Seamonkey 2.0, and Netscape 9, please visit our project installation page for the latest Flashblock 1.3.x.
+&lt;a href=&#34;http://outgoing.mozilla.org/v1/01698ffe47be47800f8434cf2569b733dba54bf2/http%3A//flashblock.mozdev.org/installation2.html%23current&#34; rel=&#34;nofollow&#34;&gt;http://flashblock.mozdev.org/installation2.html#current&lt;/a&gt;
+
+For &lt;b&gt;older&lt;/b&gt; browsers such as Firefox 1.0.7, Mozilla Suite 1.7, Seamonkey 1.x, and Netscape 7/8, please visit our project installation page for Flashblock 1.3.14:
+&lt;a href=&#34;http://outgoing.mozilla.org/v1/b496ad110c0e95717f977f3d33ac18d160529c2b/http%3A//flashblock.mozdev.org/installation2.htmlfb1315&#34; rel=&#34;nofollow&#34;&gt;http://flashblock.mozdev.org/installation2.htmlfb1315&lt;/a&gt;</description><license>
+    <name>Custom License</name>
+    <url>https://addons.mozilla.org/en-US/firefox/addon/flashblock/license/1.5.15.1</url>
+  </license>  <icon size="64">https://addons.cdn.mozilla.net/img/uploads/addon_icons/0/433-64.png?modified=1353048684</icon>
+  <icon size="32">https://addons.cdn.mozilla.net/img/uploads/addon_icons/0/433-32.png?modified=1353048684</icon>
+  <compatible_applications><application>
+      <name>Firefox</name>
+      <application_id>1</application_id>
+      <min_version>3.0</min_version>
+      <max_version>19.*</max_version>
+      <appID>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</appID>
+    </application></compatible_applications>
+  <all_compatible_os><os>ALL</os></all_compatible_os>
+  <eula></eula><previews></previews><rating>4</rating>
+  <learnmore>https://addons.mozilla.org/en-US/firefox/addon/flashblock/?src=api</learnmore><install hash="sha256:cced10f6b3f5de99ebf7d5636a0802c6794ab594b54190062a6291655e118311"
+    os="ALL"
+    size="96256">https://addons.mozilla.org/firefox/downloads/file/126475/flashblock-1.5.15.1-fx.xpi?src=api</install>
+  <install hash="sha256:4c7706befc0c9dd2c3073c2df072178408b79cb0d1027ce4ae47f31a0cd150fb" os=""
+             size="96256"
+             status="Beta">
+      https://addons.mozilla.org/firefox/downloads/file/121081/flashblock-1.5.15b2-fx.xpi?src=api
+    </install>
+    <contribution_data>
+      <link>https://addons.mozilla.org/en-US/firefox/addon/flashblock/contribute/?src=api</link>
+                <suggested_amount currency="USD" amount="5.00">
+            $5.00
+          </suggested_amount>
+            <meet_developers>
+        https://addons.mozilla.org/en-US/firefox/addon/flashblock/developers?src=api
+      </meet_developers>
+    </contribution_data>    <developer_comments>Please report support issues at: &lt;a href=&#34;http://outgoing.mozilla.org/v1/e9ba90506f37f3263f0106bdccb7bc2f44f99e40/http%3A//www.mozdev.org/mailman/listinfo/flashblock&#34; rel=&#34;nofollow&#34;&gt;http://www.mozdev.org/mailman/listinfo/flashblock&lt;/a&gt; This mailing list is public, other people can see your messages including your email address.
+
+To send private email please use our contact webpage at: &lt;a href=&#34;http://outgoing.mozilla.org/v1/448e3cb2aead1ae1c64962b6e721d5c4e67e17d9/http%3A//flashblock.mozdev.org/contact.html&#34; rel=&#34;nofollow&#34;&gt;http://flashblock.mozdev.org/contact.html&lt;/a&gt;
+
+Flashblock 1.5.14 doesn&#39;t work on Firefox 2.0.0.x. For Firefox 2.0 users. Please install 1.5.14.2 instead.
+Flashblock 1.5.14 broke compatibility with sIFR Flash replacement. Please install 1.5.14.2 instead.
+
+&lt;b&gt;Whitelists:&lt;/b&gt; Make sure that you leave out the protocol prefix e.g. &#34;https://&#34; so to whitelist youtube, you should just use &#34;&lt;a href=&#34;http://outgoing.mozilla.org/v1/5ed83dd25f4f1908229bc06256a100ad31add958/http%3A//youtube.com&#34; rel=&#34;nofollow&#34;&gt;youtube.com&lt;/a&gt;&#34;.
+
+A User mentioned that whitelisting youtube videos embedded on other sites stopped working because the URL has changed, You should now whitelist &#34;&lt;a href=&#34;http://outgoing.mozilla.org/v1/4fcaa443f2fbb87fb912eea9219343bd9a96a4ee/http%3A//s.ytimg.com/yt&#34; rel=&#34;nofollow&#34;&gt;s.ytimg.com/yt&lt;/a&gt;&#34; instead.
+
+&lt;b&gt;FoxTab:&lt;/b&gt; To allow FoxTab to work without interruption please add &#34;chrome&#34; to the Flashblock whitelist (without the &#39;&#34; quotes).
+
+Google Street View: Flashblock is reported to prevent Google Street View from running when trying to start it from Google Maps. Please add &lt;a href=&#34;http://outgoing.mozilla.org/v1/f78cabc0d2dcd8c48597073c292842dd7330d8d7/http%3A//maps.google.com&#34; rel=&#34;nofollow&#34;&gt;maps.google.com&lt;/a&gt; to the Flashblock whitelist (For regional versions of Google such as &lt;a href=&#34;http://outgoing.mozilla.org/v1/0723f8f1c036db3895fc6482be51d54b089133dd/http%3A//maps.google.ch&#34; rel=&#34;nofollow&#34;&gt;maps.google.ch&lt;/a&gt;, &lt;a href=&#34;http://outgoing.mozilla.org/v1/49acfbb42030268285ffb6aced23bd43ec3d1a00/http%3A//maps.google.fr&#34; rel=&#34;nofollow&#34;&gt;maps.google.fr&lt;/a&gt;, and &lt;a href=&#34;http://outgoing.mozilla.org/v1/84ea7f413500cb8632a123a7a7ddccaa7561e0be/http%3A//maps.google.de&#34; rel=&#34;nofollow&#34;&gt;maps.google.de&lt;/a&gt; use &#34;maps.google&#34; as the whitelist string). The easiest way to do this is to put the Flashblock toolbar button on a toolbar and then clicking on the drop marker on the right edge of the button. Choose &#34;Allow Flash from this site&#34; while &lt;a href=&#34;http://outgoing.mozilla.org/v1/f78cabc0d2dcd8c48597073c292842dd7330d8d7/http%3A//maps.google.com&#34; rel=&#34;nofollow&#34;&gt;maps.google.com&lt;/a&gt; is in your tab/window.
+
+Please read our FAQ at: &lt;a href=&#34;http://outgoing.mozilla.org/v1/fe0746f01ece2ecce680e2b12eb9e540b70cb040/http%3A//flashblock.mozdev.org/faq.html&#34; rel=&#34;nofollow&#34;&gt;http://flashblock.mozdev.org/faq.html&lt;/a&gt;
+Many common questions have answers there.
+
+Flashblock 1.5 is designed to work only with Firefox 2.0 and newer, Netscape Navigator 9 and with Flock.
+
+For other browsers such as Seamonkey 2.0, and Netscape 9, please visit our project installation page for the latest Flashblock 1.3.x.
+&lt;a href=&#34;http://outgoing.mozilla.org/v1/01698ffe47be47800f8434cf2569b733dba54bf2/http%3A//flashblock.mozdev.org/installation2.html%23current&#34; rel=&#34;nofollow&#34;&gt;http://flashblock.mozdev.org/installation2.html#current&lt;/a&gt;
+
+For &lt;b&gt;older&lt;/b&gt; browsers such as Firefox 1.0.7, Mozilla Suite 1.7, Seamonkey 1.x, and Netscape 7/8, please visit our project installation page for Flashblock 1.3.14:
+&lt;a href=&#34;http://outgoing.mozilla.org/v1/b496ad110c0e95717f977f3d33ac18d160529c2b/http%3A//flashblock.mozdev.org/installation2.htmlfb1315&#34; rel=&#34;nofollow&#34;&gt;http://flashblock.mozdev.org/installation2.htmlfb1315&lt;/a&gt;</developer_comments>
+    <reviews num="789">
+      https://addons.mozilla.org/en-US/firefox/addon/flashblock/reviews/?src=api
+    </reviews>
+    <total_downloads>14790056</total_downloads>
+    <weekly_downloads>44837</weekly_downloads>
+    <daily_users>1357742</daily_users>
+    <created epoch="1103558929">
+      2004-12-20T16:08:49Z
+    </created>
+    <last_updated epoch="1310845673">
+      2011-07-16T19:47:53Z
+    </last_updated>
+    <homepage>http://flashblock.mozdev.org/</homepage>
+    <support>http://flashblock.mozdev.org/contact.html</support>
+    <featured>0</featured>
+        <performance>
+            <application name="fx" version="8.0.1">
+                <platform name="WINNT" version="6.1">
+          <result type="ts" baseline="548.47" average="553.95"
+                  above_threshold="false" />
+        </platform>        <platform name="Fedora" version="12 - Constantine">
+          <result type="ts" baseline="479.26" average="484.37"
+                  above_threshold="false" />
+        </platform>        <platform name="MacOSX" version="10.6 (rev4)">
+          <result type="ts" baseline="637.58" average="639.42"
+                  above_threshold="false" />
+        </platform></application>      <application name="fx" version="4.0.1">
+                <platform name="MacOSX" version="10.5.8">
+          <result type="ts" baseline="687.21" average="693.63"
+                  above_threshold="false" />
+        </platform>        <platform name="WINNT" version="5.1">
+          <result type="ts" baseline="409.26" average="409.05"
+                  above_threshold="false" />
+        </platform></application>      <application name="fx" version="5.0">
+                <platform name="Fedora" version="12 - Constantine">
+          <result type="ts" baseline="506.0" average="496.05"
+                  above_threshold="false" />
+        </platform>        <platform name="WINNT" version="5.1">
+          <result type="ts" baseline="388.11" average="392.53"
+                  above_threshold="false" />
+        </platform>        <platform name="MacOSX" version="10.5.8">
+          <result type="ts" baseline="679.89" average="688.95"
+                  above_threshold="false" />
+        </platform>        <platform name="WINNT" version="6.1">
+          <result type="ts" baseline="522.0" average="524.05"
+                  above_threshold="false" />
+        </platform></application>      <application name="fx" version="6.0.2">
+                <platform name="WINNT" version="6.1">
+          <result type="ts" baseline="519.79" average="538.0"
+                  above_threshold="false" />
+        </platform>        <platform name="MacOSX" version="10.6.2">
+          <result type="ts" baseline="654.42" average="651.42"
+                  above_threshold="false" />
+        </platform>        <platform name="Fedora" version="12 - Constantine">
+          <result type="ts" baseline="476.21" average="484.53"
+                  above_threshold="false" />
+        </platform></application>      <application name="fx" version="7.0.1">
+                <platform name="WINNT" version="6.1">
+          <result type="ts" baseline="547.16" average="549.05"
+                  above_threshold="false" />
+        </platform>        <platform name="Fedora" version="12 - Constantine">
+          <result type="ts" baseline="479.68" average="489.95"
+                  above_threshold="false" />
+        </platform>        <platform name="MacOSX" version="10.6.2 (rev3)">
+          <result type="ts" baseline="667.37" average="655.79"
+                  above_threshold="false" />
+        </platform>        <platform name="MacOSX" version="10.6.2">
+          <result type="ts" baseline="671.16" average="664.84"
+                  above_threshold="false" />
+        </platform></application>      <application name="fx" version="8.0">
+                <platform name="MacOSX" version="10.6 (rev4)">
+          <result type="ts" baseline="624.84" average="626.84"
+                  above_threshold="false" />
+        </platform>        <platform name="WINNT" version="6.1">
+          <result type="ts" baseline="541.58" average="555.79"
+                  above_threshold="false" />
+        </platform>        <platform name="Fedora" version="12 - Constantine">
+          <result type="ts" baseline="477.95" average="478.74"
+                  above_threshold="false" />
+        </platform>        <platform name="MacOSX" version="10.6.2 (rev3)">
+          <result type="ts" baseline="657.21" average="663.32"
+                  above_threshold="false" />
+        </platform></application></performance>
+    </addon>
+
+          </searchresults>

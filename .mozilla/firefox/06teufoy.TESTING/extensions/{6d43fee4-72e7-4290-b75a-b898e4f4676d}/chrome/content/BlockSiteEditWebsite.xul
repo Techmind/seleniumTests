@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet href="chrome://global/skin" type="text/css" ?>
+
+<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" 
+	flex="1"
+	title="BlockSite"
+	onload="BlockSitePrefs.editLocation()"
+	ondialogaccept="BlockSitePrefs.updateLocation()">
+	<script type="application/x-javascript" src="chrome://blocksite/content/BlockSitePrefs.js" />
+	<vbox>
+		<groupbox>
+			<textbox id="blockSiteLocation" value="http://" width="800"/>
+		</groupbox>
+	</vbox>
+</dialog>

@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#sidebar-title"
+                   value="" />
+  <RDF:Description RDF:about="chrome://browser/content/preferences/connection.xul">
+    <NC:persist RDF:resource="chrome://browser/content/preferences/connection.xul#ConnectionsDialog"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul">
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#main-window"/>
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#sidebar-box"/>
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#sidebar-title"/>
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#addon-bar"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="about:config#valueCol"
+                   ordinal="7" />
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#main-window"
+                   width="994"
+                   height="962"
+                   sizemode="normal"
+                   screenX="65"
+                   screenY="24" />
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#addon-bar"
+                   collapsed="true" />
+  <RDF:Description RDF:about="about:config#lockCol"
+                   ordinal="3" />
+  <RDF:Description RDF:about="chrome://browser/content/preferences/preferences.xul#BrowserPreferences"
+                   screenX="339"
+                   screenY="227"
+                   lastSelected="paneAdvanced" />
+  <RDF:Description RDF:about="about:config#prefCol"
+                   ordinal="1"
+                   sortDirection="ascending" />
+  <RDF:Description RDF:about="about:config#typeCol"
+                   ordinal="5" />
+  <RDF:Description RDF:about="chrome://browser/content/preferences/connection.xul#ConnectionsDialog"
+                   screenX="62"
+                   screenY="35" />
+  <RDF:Description RDF:about="chrome://browser/content/preferences/preferences.xul">
+    <NC:persist RDF:resource="chrome://browser/content/preferences/preferences.xul#BrowserPreferences"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="about:config">
+    <NC:persist RDF:resource="about:config#prefCol"/>
+    <NC:persist RDF:resource="about:config#lockCol"/>
+    <NC:persist RDF:resource="about:config#typeCol"/>
+    <NC:persist RDF:resource="about:config#valueCol"/>
+  </RDF:Description>
+</RDF:RDF>

@@ -1,0 +1,19 @@
+<!ENTITY  BlockSite.preferences		"BlockSite Preferences">
+<!ENTITY  BlockSite.enableFunctions	"Desktop only options">
+<!ENTITY  BlockSite.enableBlockSite	"Enable BlockSite">
+<!ENTITY  BlockSite.enableWarning	"Enable warning messages">
+<!ENTITY  BlockSite.removeLinks		"Enable link removal">
+<!ENTITY  BlockSite.authentication	"Authentication">
+<!ENTITY  BlockSite.enableAuthentication "Enable authentication">
+<!ENTITY  BlockSite.password		"New password">
+<!ENTITY  BlockSite.blacklist		"Blacklist">
+<!ENTITY  BlockSite.whitelist		"Invert list to whitelist">
+<!ENTITY  BlockSite.locations		"Locations">
+<!ENTITY  BlockSite.add			"Add">
+<!ENTITY  BlockSite.edit		"Edit">
+<!ENTITY  BlockSite.remove		"Remove">
+<!ENTITY  BlockSite.clearList		"Clear list">
+<!ENTITY  BlockSite.import		"Import">
+<!ENTITY  BlockSite.export		"Export">
+<!ENTITY  BlockSite.quickadd	"Quick add">
+<!ENTITY  BlockSite.quickaddCheck	"Add this site">

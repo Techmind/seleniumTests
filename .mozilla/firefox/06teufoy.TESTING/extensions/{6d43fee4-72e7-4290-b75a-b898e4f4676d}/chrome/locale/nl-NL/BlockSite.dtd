@@ -1,0 +1,19 @@
+<!ENTITY  BlockSite.preferences		"BlockSite Voorkeuren">
+<!ENTITY  BlockSite.enableFunctions	"Functies inschakelen">
+<!ENTITY  BlockSite.enableBlockSite	"BlockSite inschakelen">
+<!ENTITY  BlockSite.enableWarning	"Waarschuwingen inschakelen">
+<!ENTITY  BlockSite.removeLinks		"Linkverwijdering inschakelen">
+<!ENTITY  BlockSite.authentication	"Wachtwoordbeveiliging">
+<!ENTITY  BlockSite.enableAuthentication "Wachtwoordbeveiliging inschakelen">
+<!ENTITY  BlockSite.password		"Nieuw wachtwoord">
+<!ENTITY  BlockSite.blacklist		"Zwarte lijst">
+<!ENTITY  BlockSite.whitelist		"Witte lijst">
+<!ENTITY  BlockSite.locations		"Locaties">
+<!ENTITY  BlockSite.add			"Toevoegen">
+<!ENTITY  BlockSite.edit		"Bewerken">
+<!ENTITY  BlockSite.remove		"Verwijderen">
+<!ENTITY  BlockSite.clearList		"Lijst leegmaken">
+<!ENTITY  BlockSite.import		"Importeren">
+<!ENTITY  BlockSite.export		"Exporteren">
+<!ENTITY  BlockSite.quickadd	"Quick add">
+<!ENTITY  BlockSite.quickaddCheck	"Add this site on ok">
