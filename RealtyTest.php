@@ -1,4 +1,4 @@
-p<?php
+<?php
 // GoogleTest.php
 // должны быть установлены PEAR-пакеты
 // сам PEAR должен быть в include_path
@@ -15,7 +15,7 @@ class RealtyTest extends PHPUnit_Framework_TestCase
 
     public function setUp()
     {
-        $webdriver = new WebDriver();
+        $webdriver = new WebDriver(file_get_contents('selenium.dev.url') ? : file_get_contents('selenium.url'));
 
         try {
         $this->session = $webdriver->session();
