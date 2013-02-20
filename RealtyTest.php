@@ -12,6 +12,8 @@ class RealtyTest extends PHPUnit_Framework_TestCase
      */
     public $session;
 
+    private $baseUrl = 'realty.mail.ru';
+
     public function setUp()
     {
         $webdriver = new WebDriver(is_file('selenium.dev.url') ? file_get_contents('selenium.dev.url') : file_get_contents('selenium.url'));
@@ -43,9 +45,9 @@ class RealtyTest extends PHPUnit_Framework_TestCase
 
     public function testGoogle()
     {
-        $this->session->open("http://realty.mail.ru/");
+        $this->session->open("http://{$this->baseUrl}/");
 
-
+        $skip_city = false;
         $links = $this->session->elements('tag name', 'a');
 
         $testedUrls = array();
@@ -57,9 +59,9 @@ class RealtyTest extends PHPUnit_Framework_TestCase
 
             $href = $link->attribute('href');
 
-            if (preg_match('~/realty.mail.ru/$~', $href) || preg_match('~/realty.mail.ru/#~', $href)) {
+            if (preg_match("~/{$this->baseUrl}/$~", $href) || preg_match("~/{$this->baseUrl}/#~", $href)) {
                 echo "Ignore main link " . $href . PHP_EOL;
-            } else   if (preg_match('~/realty.mail.ru~', $href)) {
+            } else   if (preg_match("~/{{$this->baseUrl}}~", $href)) {
                 echo "DO LINK $href\n";
                 $testedUrls[] = $href;
             } else {
@@ -68,11 +70,9 @@ class RealtyTest extends PHPUnit_Framework_TestCase
 
         }
 
-        $skip_city = false;
-
         foreach ($testedUrls as $url) {
-            if ($skip_city && preg_match('~http://realty.mail.ru/[a-z]*/$~', $url)) {
-                echo "Skip city " . $href . PHP_EOL;
+            if ($skip_city && preg_match("~http://{$this->baseUrl}/[a-z]*/$~", $url)) {
+                echo "Skip city " . $url . PHP_EOL;
             } else {
                 $this->isNot404($url);
             }
