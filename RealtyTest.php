@@ -61,7 +61,7 @@ class RealtyTest extends PHPUnit_Framework_TestCase
 
             if (preg_match("~/{$this->baseUrl}/$~", $href) || preg_match("~/{$this->baseUrl}/#~", $href)) {
                 echo "Ignore main link " . $href . PHP_EOL;
-            } else   if (preg_match("~/{{$this->baseUrl}}~", $href)) {
+            } else   if (preg_match("~/{$this->baseUrl}~", $href)) {
                 echo "DO LINK $href\n";
                 $testedUrls[] = $href;
             } else {
